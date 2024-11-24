@@ -93,7 +93,7 @@
     position: relative;
     color: #404bbf;
   }
-  .first-li ::after{
+  header div nav a ul li .first-li-a ::after{
     content: '';
     width: 100%;
     position: absolute;
@@ -116,7 +116,7 @@
   .address-list {
     display: flex;
     gap: 40px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .address-list-item {
     font-size: 16px;
@@ -139,7 +139,8 @@
     background-color: #2e2f42;
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background.jpg);
-    /* max-width: 1440px; */
+    max-width: 1440px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -249,10 +250,7 @@
     border-radius: 4px;
     border: 1px solid #8e8f99;
     margin-bottom: 8px;
-  }
-  .svg-class-icon{
-    width: 64;
-    height: 64;
+    height: 112px;
   }
   .social-media{
     display: flex;
@@ -277,9 +275,10 @@
     background-color: #404bbf;
   }
   .social-media-svg{
-    width: 16;
-    height: 16;
     fill: #f4f4fd
+  }
+  div h3 p ul li a{
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   /* FOURTH SECTION */
@@ -302,12 +301,12 @@
     background-color: #4d5ae5;
     height: 100%;
     width: 100%;
-    transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .fourth-section-list-item{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
   }
   .fourth-section-list-item:hover p{
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -352,9 +351,6 @@
     display: flex;
     align-items: baseline;
   }
-  .footer-div{
-    margin-right: 120px;
-  }
   .footer-p-sm{
     font-weight: 500;
     font-size: 16px;
@@ -380,10 +376,9 @@
   .footer-li-a:focus{
     background-color: #31d0aa
   }
-  ul li a svg{
-    width: 24;
-    height: 24;
-  }
   .footer-svg{
     fill: #f4f4fd;
+  }
+  .logo-a{
+    margin-right: 120px;
   }
