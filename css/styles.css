@@ -72,7 +72,7 @@
     color: #4d5ae5;
     margin-right: 76px;
   }
-  .logo-span {
+  .logo-span{
     color: #2e2f42;
   }
   .nav-list {
@@ -89,11 +89,11 @@
     letter-spacing: 0.02em;
     padding: 24px 0;
   }
-  .first-li-a{
+  .first-li{
     position: relative;
     color: #404bbf;
   }
-  header div nav a ul li .first-li-a ::after{
+  .first-li::after{
     content: '';
     width: 100%;
     position: absolute;
@@ -116,13 +116,13 @@
   .address-list {
     display: flex;
     gap: 40px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .address-list-item {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .address-list-item:hover {
     color: #404bbf;
@@ -269,6 +269,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .social-media-a:hover,
   .social-media-a:focus{
@@ -362,6 +363,10 @@
   .footer-ul{
     display: flex;
     gap: 16px; 
+  }
+  .footer-li {
+    width: 40px;
+    height: 40px;
   }
   .footer-li-a{
     width: 100%;
